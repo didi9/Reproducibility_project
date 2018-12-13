@@ -1,7 +1,7 @@
 library(ggplot2)
-library(readxl)
-data = readxl::read_xlsx("journal.pone.0177924.s001.xlsx")
-
+library(readr)
+#data = readxl::read_xlsx("journal.pone.0177924.s001.xlsx")
+data = read_csv()
 ggplot(data, aes(x = drsmem , y = post_cing_suvr)) +
   geom_point() +
   coord_cartesian(ylim= c(.6,2)) +
