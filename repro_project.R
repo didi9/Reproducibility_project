@@ -1,5 +1,5 @@
-library(tidyverse)
-
+library(ggplot2)
+library(readxl)
 data = readxl::read_xlsx("journal.pone.0177924.s001.xlsx")
 
 ggplot(data, aes(x = drsmem , y = post_cing_suvr)) +
